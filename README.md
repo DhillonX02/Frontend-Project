@@ -1,16 +1,25 @@
-# React + Vite
+# Agency AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive creative-agency landing page built as a React and Tailwind CSS
+practice project. The page is a frontend demo; it does not include AI features
+or a backend.
 
-Currently, two official plugins are available:
+## Run locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```sh
+npm install
+npm run dev
+```
 
-## React Compiler
+## React concepts in this project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Reusable components and passing props (`Navbar`, `ThemeToggleBtn`)
+- State and event handlers for the mobile menu, theme switch, and contact form
+- Rendering repeated navigation links, services, projects, and client logos with
+  `map`
+- Controlled form inputs, native validation, and conditional status messages
+- `useEffect` for applying the selected theme to the document
+- Responsive layouts, dark-mode styles, and interactive states with Tailwind CSS
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The contact form is intentionally frontend-only: submitting it displays a demo
+confirmation and does not send or save the message.
